@@ -10,7 +10,6 @@
       <title>Cyber Security Demo</title>
       <link rel="stylesheet" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
       <header>
@@ -25,9 +24,17 @@
           <a href="#sec-4">Gallery</a>
           <a href="#sec-7">Contact Us</a>
         </nav>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+        <svg class="ham ham6 icon" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+          <path
+                class="line top"
+                d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+          <path
+                class="line middle"
+                d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+          <path
+                class="line bottom"
+                d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+        </svg>
       </header>
       <div class="landing">
         <div class="img-overlay"></div>
@@ -133,6 +140,7 @@
           </a>
         </div>
       </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="script.js"></script>
     </body>
   </html>
